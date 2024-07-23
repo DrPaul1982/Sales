@@ -35,18 +35,17 @@ public class Main {
         System.out.print("Enter number of the days for selling: ");
         int numOfDays2 = scanner.nextInt();
 
+
         double pricePerAll = numOfProducts1 * pricePerOne1;
-        double priceTotal = pricePerAll * numOfDays1;
-        double salesPerDay = priceTotal / numOfDays1;
+        double salesPerDay = pricePerAll / numOfDays1;
 
         System.out.printf("Product № 1: %s, %n total sales for %s days is %s %.2f,%n sales by day is %s %.2f.\n",
-                item1, numOfDays1, CASH, priceTotal, CASH, salesPerDay);
+                item1, numOfDays1, CASH, pricePerAll, CASH, salesPerDay);
 
         pricePerAll = numOfProducts2 * pricePerOne2;
-        priceTotal = pricePerAll * numOfDays2;
-        salesPerDay = priceTotal / numOfDays2;
+        salesPerDay = pricePerAll / numOfDays2;
 
         System.out.printf("Product № 2: %s, %n total sales for %s days is %s %.2f,%n sales by day is %s %.2f.\n",
-                item2, numOfDays2, CASH, priceTotal, CASH, salesPerDay);
+                item2, numOfDays2, CASH, pricePerAll, CASH, salesPerDay);
     }
 }
